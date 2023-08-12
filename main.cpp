@@ -1,4 +1,5 @@
 #include "crow_all.h"
+#include <iostream>
 
 int main()
 {
@@ -19,5 +20,6 @@ int main()
 		server_future.get();  // throw exceptions if any
 	}
 
+	std::cout << "You should see this message when everything works OK.\n";
 	return 0;
 }
